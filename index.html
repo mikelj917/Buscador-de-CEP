@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="toggle-buttons">
+            <button id="btn-busca-cep" class="active">Buscar por CEP</button>
+            <button id="btn-busca-endereco" class="">Buscar por Endereço</button>
+        </div>
+
+        <!-- Busca por CEP -->
+        <div id="search-box-cep" class="">
+            <h2>Buscador por CEP</h2>
+            <input type="text" id="cep" maxlength="8" placeholder="Digite o CEP">
+            <button id="buscar-cep">Buscar</button>
+        </div>
+
+        <!-- Busca por Endereço -->
+        <div id="search-box-endereco" class="hide">
+            <h2>Buscador de CEP por Endereço</h2>
+            <input type="text" id="uf" maxlength="2" placeholder="UF (Ex: SP)">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="logradouro" placeholder="Logradouro (Ex: Rua Ivaí)">
+            <button id="buscar-endereco">Buscar</button>
+        </div>
+
+        <div id="alert"></div>
+
+        <div id="result-container" class="hide">
+            <h3>Resultado da Busca</h3>
+            <p id="count"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Logradouro/Nome</th>
+                        <th>Bairro/Distrito</th>
+                        <th>Localidade/UF</th>
+                        <th>CEP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="logradouro-result"></td>
+                        <td id="bairro"></td>
+                        <td id="localidade"></td>
+                        <td id="cep-result"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="nova-busca">Nova Busca</button>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
