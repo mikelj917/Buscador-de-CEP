@@ -2,6 +2,8 @@
 
 Este é um projeto simples de buscador de CEP e endereço utilizando a API do [ViaCEP](https://viacep.com.br/). O usuário pode buscar informações de endereço a partir de um CEP ou encontrar um CEP com base em um endereço.
 
+![Visualização do Buscador via CEP](./src/img/image.png)
+
 ## 📌 Funcionalidades
 - **Busca por CEP**: O usuário digita um CEP e recebe informações sobre o logradouro, bairro, cidade, estado e o próprio CEP.
 - **Busca por Endereço**: O usuário digita UF, cidade e logradouro para obter o CEP correspondente.
